@@ -2,6 +2,7 @@
 :root{
     --section-padding:100px;
     --section-background:#f9f9f9;
+    --my-blue:#147efb;
 }
 /* End Variables */
 /* Start Global Rules  */
@@ -49,3 +50,45 @@ a{
     }
 }
 /* End Global Rules  */
+/* Start Header  */
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .container nav a{
+    color: black;
+    display: inline-block;
+    padding: 20px 5px;
+    overflow: hidden;
+    transition: color 0.3s linear, background-color 0.3s linear;
+    position: relative;
+}
+header .container nav a:hover{
+    background-color: var(--section-background);
+    color: var(--my-blue);
+}
+header .container nav a::before,
+header .container nav a::after{
+    content: "";
+    position: absolute;
+    background-color: var(--my-blue);
+    height: 2px;
+    width: 100%;
+    transition: left 0.3s linear, right 0.3s linear;
+}
+header .container nav a::before{
+    top: 0;
+    left: -100%;
+}
+header .container nav a::after{
+    bottom: 0;
+    right: -100%;
+}
+header .container nav a:hover::before{
+    left: 0;
+}
+header .container nav a:hover::after{
+    right: 0;
+}
+/* End Header  */
