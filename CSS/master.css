@@ -131,3 +131,60 @@ header .container .list{
     }
 }
 /* End Header */
+/* Start Intro */
+.intro{
+    background-color: var(--section-background);
+    padding: var(--section-padding) 0;
+}
+.intro .container{
+    display: flex;
+    justify-content: space-around;
+}
+.intro .container .text{
+    max-width: 480px;
+}
+.intro .container .text .heading{
+    position: relative;
+}
+.intro .container .text .heading h1{
+    font-size: 50px;
+    color: #2d2e32;
+    line-height: 1.3;
+}
+.intro .container .text .heading img{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 2px;
+    right: 130px;
+}
+
+.intro .container .text .breif-description{
+    color: #555;
+    font-family: Mulish,sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 33px;
+}
+.intro .container .text .social{
+    font-size: 30px;
+}
+.intro .container .text .social a{
+    color: #2d2e32;
+    margin-right: 8px;
+    transition: 0.3s color;
+}
+.intro .container .text .social a:hover{
+    color: var(--my-blue);
+}
+.intro .container .personal-image{
+    width: 350px;
+    height: 350px;
+    background-image: url("/photos/personalEdited.jpg");
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* End Intro */
