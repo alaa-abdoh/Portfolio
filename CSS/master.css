@@ -157,8 +157,19 @@ header .container .list{
     display: flex;
     justify-content: space-around;
 }
+@media (max-width:767px){
+    .intro .container .firstRow{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
 .intro .container .text{
     max-width: 480px;
+}
+@media (max-width:767px){
+    .intro .container .text{
+        text-align: center;
+    }
 }
 .intro .container .text .heading{
     position: relative;
@@ -168,14 +179,33 @@ header .container .list{
     color: #2d2e32;
     line-height: 1.3;
 }
+@media (max-width:767px){
+    .intro .container .text .heading h1{
+        font-size: 35px;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 .intro .container .text .heading img{
     width: 60px;
     height: 60px;
     position: absolute;
     bottom: 2px;
-    right: 130px;
+    right: 100px;
 }
-
+@media (max-width:767px){
+    .intro .container .text .heading img{
+        right: 60px;
+        width: 50px;
+        height: 50px;
+    }
+}
+@media (max-width:450px){
+    .intro .container .text .heading img{
+        right: 0px;
+    }
+}
 .intro .container .text .breif-description{
     color: #555;
     font-family: Mulish,sans-serif;
@@ -216,14 +246,30 @@ header .container .list{
         height: 340px;
     }
 }
+@media (max-width:767px){
+    .intro .container .personal-image{
+        animation: none;
+    }
+}
 .intro .container .secondRow{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 450px;
+    max-width: 450px;
     position: absolute;
     bottom: -30px;
-    left: 75px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+@media (max-width:767px){
+    .intro .container .secondRow{
+        position: static;
+        flex-direction: column;
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        transform: translate(0,0);
+    }
 }
 .intro .container .secondRow p{
     padding: 5px 15px;
@@ -232,6 +278,14 @@ header .container .list{
     font-family: Mulish,sans-serif;
     font-weight: 600;
     font-size: 17px;
+}
+@media (max-width:767px){
+    .intro .container .secondRow p{
+        border-right:none;
+        padding-bottom: 10px;
+        border-bottom: 2px dashed black;
+        margin-bottom: 25px;
+    }
 }
 .intro .container .secondRow ul{
     display: flex;
