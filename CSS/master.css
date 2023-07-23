@@ -187,7 +187,7 @@ header .container .list{
     background-repeat: no-repeat;
     border-radius: 50%;
     border: 3px solid #2d2e32;
-    animation: photoMovement 4s infinite alternate linear ;
+    animation: photoMovement 2s infinite alternate linear ;
 }
 /* End Intro */
 
