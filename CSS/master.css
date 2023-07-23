@@ -151,6 +151,7 @@ header .container .list{
     background-color: var(--section-background);
     padding: var(--section-padding) 0;
     min-height: calc(100vh - 70px);
+    position: relative; /*for second row div*/
 }
 .intro .container .firstRow{
     display: flex;
@@ -205,14 +206,6 @@ header .container .list{
     border: 3px solid #2d2e32;
     animation: photoMovement 2s infinite alternate linear ;
 }
-/* End Intro */
-
-
-
-
-
-
-
 @keyframes photoMovement{  
     50%{
         width:320px;
@@ -223,3 +216,49 @@ header .container .list{
         height: 340px;
     }
 }
+.intro .container .secondRow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 450px;
+    position: absolute;
+    bottom: -30px;
+    left: 75px;
+}
+.intro .container .secondRow p{
+    padding: 5px 15px;
+    border-right: 2px dashed black;
+    color: #2d2e32;
+    font-family: Mulish,sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+}
+.intro .container .secondRow ul{
+    display: flex;
+}
+.intro .container .secondRow ul li{
+    margin-left: 15px;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro .container .secondRow ul li img{
+    width: 40px;
+    height: 40px;
+}
+/* End Intro */
+/* Start About */
+.about{
+    padding: var(--section-padding) 0;
+}
+/* End About */
+
+
+
+
+
+
