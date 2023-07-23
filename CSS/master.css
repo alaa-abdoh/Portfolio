@@ -136,7 +136,7 @@ header .container .list{
     background-color: var(--section-background);
     padding: var(--section-padding) 0;
 }
-.intro .container{
+.intro .container .firstRow{
     display: flex;
     justify-content: space-around;
 }
@@ -179,12 +179,31 @@ header .container .list{
     color: var(--my-blue);
 }
 .intro .container .personal-image{
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     background-image: url("/photos/personalEdited.jpg");
     background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 50%;
+    border: 3px solid #2d2e32;
+    animation: photoMovement 4s infinite alternate linear ;
 }
-
 /* End Intro */
+
+
+
+
+
+
+
+@keyframes photoMovement{  
+    50%{
+        width:320px;
+        height: 320px;
+    }
+    100%{
+        width:340px;
+        height: 340px;
+    }
+}
