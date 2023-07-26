@@ -564,6 +564,7 @@ header .container .list{
     width: 50%;
     overflow-y: hidden;   
     border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
 }
 @media (max-width:991px){
     .projects .container .content .box .img{
@@ -573,7 +574,6 @@ header .container .list{
 }
 .projects .container .content .box .img img{
     width: 100%;
-    box-shadow: 0 0 10px rgba(0,0,0,.1);
     border-radius: 20px;
     transition: transform 10s linear;
 }
