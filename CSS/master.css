@@ -715,14 +715,27 @@ footer .container{
     display: flex;
     justify-content: space-between;
 }
+@media (max-width:767px){
+    footer .container{
+        flex-direction: column;
+    }
+}
 footer .container p{
     color: white;
     font-size: 20px;
 }
+@media (max-width:767px){
+    footer .container p{
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
 footer .container div{
-    min-width: 80px;
+    width: 80px;
     display: flex;
     justify-content: space-between;
+    align-self: center;
 }
 footer .container div a{
     color: white;
