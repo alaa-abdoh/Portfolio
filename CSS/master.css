@@ -643,6 +643,12 @@ header .container .list{
     color: var(--my-blue);
     transform: translate(0,-15px);
 }
+.goOut{
+    left:-5000px;
+}
+.comeIn{
+    left:-300px;
+}
 .projects .container .content .box .text .links a i{
     margin-left: 5px;
     font-size: 30px;
