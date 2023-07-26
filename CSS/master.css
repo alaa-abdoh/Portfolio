@@ -411,7 +411,7 @@ header .container .list{
 .about .container .imgs{
     margin-right: 50px;
     position: relative;
-    max-width: 400px; /*cccccccccccccccccccccccccccccccccccccccccccc*/
+    max-width: 400px;
 }
 @media(max-width:991px){
     .about .container .imgs{
@@ -461,7 +461,7 @@ header .container .list{
     width: 180px;
 }
 .about .container .text{
-    max-width: 500px; /*ccccccccccccccccccccccccccccccccccccccccccccccccc*/
+    max-width: 500px;
 }
 @media(max-width:991px){
     .about .container .text{
@@ -481,9 +481,170 @@ header .container .list{
     font-family: Mulish,sans-serif;
 }
 /* End About */
+/* Start Projects */
+.projects{
+    padding: var(--section-padding) 0;
+    background-color: var(--section-background);
+}
+.projects .container{
+    padding-left:100px ;
+    padding-right:100px ;
+}
+@media(max-width:767px){
+    .projects .container{
+        padding-left:15px ;
+        padding-right:15px ;
+    }
+}
+.projects .container h4{
+    font-size: 22px;
+    margin-bottom: 50px;
+}
+@media(max-width:767px){
+    .projects .container h4{
+        text-align: center;
+    }
+}
+/* .projects .container .content{
 
-
-
-
-
-
+} */
+.projects .container .content .box{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow:  0 0 10px rgba(0,0,0,.1);
+    margin-bottom: 40px;
+    padding: 20px;
+}
+@media (max-width:991px){
+    .projects .container .content .box{
+        flex-direction: column;
+    }
+}
+.projects .container .content .box:nth-child(even){
+    flex-direction: row-reverse;
+}
+@media (max-width:991px){
+    .projects .container .content .box:nth-child(even){
+        flex-direction: column;
+    }
+}
+.projects .container .content .box .img{
+    height: 400px;
+    width: 50%;
+    overflow-y: hidden;   
+    border-radius: 20px;
+}
+@media (max-width:991px){
+    .projects .container .content .box .img{
+        width: 80%;
+        margin: 0 auto 70px;
+    }
+}
+.projects .container .content .box .img img{
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    border-radius: 20px;
+    transition: transform 10s linear;
+}
+.projects .container .content .box .img img:hover{
+    transform: translate(0,-92%);
+}
+.projects .container .content .box .text{
+    width: 40%;
+}
+@media (max-width:991px){
+    .projects .container .content .box .text{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+.projects .container .content .box .text h5{
+    margin: 10px 0 20px;
+    text-align: center;
+    color: #2d2e32;
+    text-transform:uppercase;
+    font-size: 18px;
+}
+.projects .container .content .box .text p{
+    color: #767676;
+    line-height: 1.7;
+    max-width: 300px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.projects .container .content .box .text .tools{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.projects .container .content .box .text .tools span{
+    display: inline-block;
+    padding: 10px 5px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    font-family: Mulish,sans-serif;
+    margin-right: 10px;
+    min-width: 80px;
+    margin-bottom: 10px;
+}
+.projects .container .content .box .text .links{
+    display: flex;
+    justify-content: space-evenly;
+}
+.projects .container .content .box .text .links a{
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s linear;
+}
+.projects .container .content .box .text .links a[class="special-demo"]{
+    color:RGBA(118, 118, 118, 0.5) ;
+    position: relative;
+}
+.projects .container .content .box .text .links a[class="special-demo"] .sorryMessage{
+    position: absolute;
+    top: calc(100% + 10px);
+    width: 400px;
+    font-size: 14px;
+    color:#767676;
+    line-height: 1.5;
+    cursor: auto;
+    background-color: white;
+    box-shadow:  0 0 20px rgba(0,0,0,.1);
+    padding: 10px;
+    text-align: center;
+    border-radius: 50px;
+    z-index: 1;
+    transition: all 0.6s;
+}
+.projects .container .content .box .text .links a[class="special-demo"] .sorryMessage span{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    display: block;
+    margin-bottom: 10px;
+}
+.projects .container .content .box .text .links a[class="special-demo"] .sorryMessage #close{
+    position: absolute;
+    right: 25px;
+    top: 18px;
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+}
+.projects .container .content .box .text .links a[class="special-demo"] .sorryMessage #close:hover{
+    color: red;
+}
+.projects .container .content .box .text .links a:not(.special-demo):hover{
+    color: var(--my-blue);
+    transform: translate(0,-15px);
+}
+.projects .container .content .box .text .links a i{
+    margin-left: 5px;
+    font-size: 30px;
+}
+/* End Projects */
