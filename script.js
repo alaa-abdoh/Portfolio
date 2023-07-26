@@ -17,18 +17,21 @@ function closeSorryMsg(event){
     let sorrymsg = document.getElementById("sorryMessage");
     sorrymsg.classList.toggle("comeIn")
     sorrymsg.classList.toggle("goOut")
-    // sorrymsg.classList.remove("comeIn");  
-    // sorrymsg.classList.add("goOut");   
 }
 
-// const sorryMessage = document.getElementById('sorryMessage');
-// const demoButton = document.getElementById('special-demo');
-// const btnRemove = document.getElementById('close');
+function changeMode(){
+    document.body.classList.toggle("darkMode")
+    if(document.body.classList.contains("darkMode"))
+        window.localStorage.dark = "true";
+        else window.localStorage.dark = "false";
+}
 
-// demoButton.addEventListener('click', function(event) {
-//     event.preventDefault();
-//     sorryMessage.style.left="-300px"
-// });
-// btnRemove.addEventListener('click', function() {
-//     sorryMessage.style.left="-5000px"
-// });
+window.addEventListener('load', function() {
+    checkStorage();
+  });
+
+function checkStorage(){
+    let status = window.localStorage.dark;
+    if(status == "true")
+    document.body.classList.add("darkMode")
+}  

@@ -141,6 +141,27 @@ a{
     }   
 }
 /* End styling for main heading component  */
+/* Start Dark mode button style */
+.dark{
+    position: fixed;
+    left: 0px;
+    bottom: 50%;
+    z-index: 500;
+    background-color: #7676764f;
+    width: 60px;
+    height: 60px;
+    border-top-right-radius:80px ;
+    border-bottom-right-radius:80px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dark i{
+    font-size: 22px;
+    color:var(--my-blue) ;
+    cursor: pointer;
+}
+/* End Dark mode button style */
 /* Start Header  */
 header{
     box-shadow:  0 0 10px rgba(0,0,0,.1);
