@@ -648,3 +648,54 @@ header .container .list{
     font-size: 30px;
 }
 /* End Projects */
+/* Start Contact */
+.contact{
+    padding: var(--section-padding) 0;
+}
+.contact .container h4{
+    font-size: 22px;
+    margin-bottom:50px ;
+    text-align: center;
+}
+.contact .container .content{
+    display: flex;
+    justify-content: space-evenly;
+}
+@media (max-width:767px){
+    .contact .container .content{
+        flex-direction: column;
+    }
+}
+.contact .container .content > div{
+    display: flex;
+    align-items: center;
+}
+@media (max-width:767px){
+    .contact .container .content > div{
+       margin:0 0 30px 30px;
+    }
+}
+.contact .container .content > div i{
+    box-shadow:  0 0 10px rgba(0,0,0,.1);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    color: var(--my-blue);
+    margin-right: 25px;
+}
+.contact .container .content > div h5{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.contact .container .content > div a{
+    color: black;
+    transition: color 0.3;
+}
+.contact .container .content > div a:hover{
+    color: var(--my-blue);
+}
+/* End Contact */
