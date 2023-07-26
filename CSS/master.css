@@ -146,6 +146,12 @@ header{
     height: 70px;
     display: flex;
     align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    z-index: 500;
 }
 @media (max-width:767px) {
     header{
