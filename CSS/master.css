@@ -575,10 +575,32 @@ header .container .list{
 .projects .container .content .box .img img{
     width: 100%;
     border-radius: 20px;
-    transition: transform 10s linear;
+}
+.projects .container .content .box:first-of-type .img img{
+    animation: scrollImg70 10s alternate infinite linear;   
+}
+.projects .container .content .box:nth-of-type(2) .img img,
+.projects .container .content .box:nth-child(3) .img img{
+    animation: scrollImg90 10s alternate infinite linear;   
+}
+@keyframes scrollImg70{
+    from{
+        transform: translate(0,0);
+    }
+    to{
+        transform: translate(0,-70%);
+    }
+}
+@keyframes scrollImg90{
+    from{
+        transform: translate(0,0);
+    }
+    to{
+        transform: translate(0,-90%);
+    }
 }
 .projects .container .content .box .img img:hover{
-    transform: translate(0,-92%);
+    animation-play-state:paused 
 }
 .projects .container .content .box .text{
     width: 40%;
