@@ -133,3 +133,6 @@ body.darkMode .contact .container a{
 body.darkMode footer{
     background-color: #1b1b1b;
 }
+body.darkMode .contact .container .content > div a:hover{
+    color: #00FFFF;
+}

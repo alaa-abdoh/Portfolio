@@ -577,11 +577,11 @@ header .container .list{
     border-radius: 20px;
 }
 .projects .container .content .box:first-of-type .img img{
-    animation: scrollImg70 10s alternate infinite linear;   
+    animation: scrollImg70 6s alternate infinite linear;   
 }
 .projects .container .content .box:nth-of-type(2) .img img,
 .projects .container .content .box:nth-child(3) .img img{
-    animation: scrollImg90 10s alternate infinite linear;   
+    animation: scrollImg90 14s alternate infinite linear;   
 }
 @keyframes scrollImg70{
     from{
