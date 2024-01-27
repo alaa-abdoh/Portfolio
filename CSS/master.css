@@ -270,6 +270,7 @@ header .container .list{
     padding: calc(2 * var(--section-padding)) 0;
     min-height: 100vh; /*without mines header height because the header has position fixed*/
     position: relative; /*for second row div*/
+    height: 700px;
 }
 .intro .container .firstRow{
     display: flex;
